@@ -1,0 +1,24 @@
+{
+  "name": "florister",
+  "version": "1.0.0",
+  "description": "florister",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Regaruk/Florister.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Regaruk/Florister/issues"
+  },
+  "homepage": "https://github.com/Regaruk/Florister#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
