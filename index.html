@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="CSS/styles.css" />
 
         <title>Florister</title>
     </head>
@@ -30,106 +30,57 @@
                     <h6>Cityville, Statesburg</h6>
                     <h6>10011</h6>
                 </div>
-                <div class="col">
+                <div class="col text-center font">
                     <h1>Florister</h1>
                 </div>
-                <div class="col-md-4 col-xl-2 mt-4">
-                <a href="#reserveForm" role="button">
-                    <button class="btn btn-info btn-lg">Reserve Campsite</button>
-                </a>
-            </div>
             </div>
         </div>
     </header>
 
 </header>
 
-<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+<nav class="navbar navbar-expand-sm navbar-right">
    <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="img/img/logo.png" height="30" width="30" /></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+    <a class="navbar-brand" href="index.html"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nucampNavbar">
         <ul class="navbar-nav">
-            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Login</a></li>
             <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>
-            <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-shopping-cart fa-lg"></i> Cart</a></li>
         </ul>
     </div>
     </div>
 </nav>
 
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right"> Discover & Review </h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
-                    <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2 class=> Featured Campsites </h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                    </div>
-                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/img/react-lake-thumb.jpg" alt="React Lake" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row row-content align-items-center">
-        <div class="col-sm-4 order-sm-last col-md-3">
-                <h2 class="text-sm-right">Our Community Partners</h2>
-        </div>
-        <div class="col">
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                <div class="media-body align-self-center">
-                    <h3>Bootstrap Outfitters</h3>
-                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="row row-content">
         <div class="col-sm-6 mx-auto">
             <div class="card">
-                <h3 class="bg-info text-white card-header">Reserve a Campsite</h3>
+                <h3 class="card-header">Welcome to FLorister</h3>
                 <div class="card-body">
                     <form id="reserveForm">
+                        <div class="row">Purchase Options:</div>
                         <div class="row form-group">
-                            <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                            <label class="col-sm-6 col-form-label" for="theme">Choose a Theme</label>
                                 <div class="col">
-                                    <select name="numCampers" id="numCampers" class="form-control">
+                                    <select name="theme" id="theme" class="form-control">
                                         <option Selected>Select...</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option Value="4">4</option>
-                                        <option Value="5">5</option>
-                                        <option Value="6">6</option>
+                                        <option value="Thanksgiving">Thanksgiving</option>
+                                        <option value="Christmas">Christmas</option>
+                                        <option value="Birthday">Birthday</option>
+                                        <option Value="Anniversary">Anniversary</option>
+                                        <option Value="Wedding">Wedding</option>
                                     </select>
                                 </div>
                             </div>
                         <div class="row form-group">
-                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                        Or
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-6 col-form-label" for="date">Colors</label>
                                 <div class="col">
                                 <input class="form-control" type="date" id="date" name="date" placeholder="DATE">
                                 </div>
@@ -143,8 +94,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
     
 
@@ -154,9 +103,7 @@
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
             		<ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
